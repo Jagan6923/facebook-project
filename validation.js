@@ -46,6 +46,7 @@ $(document).ready(function () {
                 required:"Please enter the mobile number ",
                 minlength:"Please enter the valid mobile number"
             },
-        }
+        },
+        
     })
 });

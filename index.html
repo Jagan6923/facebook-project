@@ -17,7 +17,7 @@
 <body>
     <div class="main-div">
         <h1 id="logo">facebook</h1>
-        <form>
+        <form id="signup">
             <div class="signup-form">
                 <div class="form-heading">
                     <h2>Create a new account</h2>
@@ -25,33 +25,39 @@
                 </div>
                 <div class="input-fields">
                     <div class="half-width">
-                        <input type="text" placeholder="First name" />
+                        <input type="text" placeholder="First name" name="fname" />
                     </div>
                     <div class="half-width">
-                        <input type="text" placeholder="Surname" />
+                        <input type="text" placeholder="Surname" name="sname" />
                     </div>
                     <div class="full-width">
-                        <input type="number" placeholder="Mobile number or email address" />
+                        <input type="number" placeholder="Mobile number or email address" name="mobile" />
                     </div>
                     <div class="full-width">
-                        <input type="password" placeholder="New password" />
+                        <input type="password" placeholder="New password" name="password" />
                     </div>
                     <label>Date of birth <i class="fas fa-question-circle"></i>
                     </label>
                     <div class="dob">
                         <div class="quat">
-                            <select>
-                                <option>1</option>
+                            <select name="day">
+                                <option value="">Choose</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
                             </select>
                         </div>
                         <div class="quat">
-                            <select>
-                                <option>1</option>
+                            <select name="month">
+                                <option value="">Choose</option>
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
                             </select>
                         </div>
                         <div class="quat">
-                            <select>
-                                <option>1</option>
+                            <select name="year">
+                                <option value="">Choose</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
                             </select>
                         </div>
                     </div>
@@ -62,19 +68,19 @@
                         <div class="quat">
                             <div class="radio-btn">
                                 <label class="radio-label">Female</label>
-                                <input type="radio" class="radio-input" />
+                                <input type="radio" class="radio-input" name="gender" />
                             </div>
                         </div>
                         <div class="quat">
                             <div class="radio-btn">
                                 <label class="radio-label">Male</label>
-                                <input type="radio" class="radio-input" />
+                                <input type="radio" class="radio-input"  name="gender" />
                             </div>
                         </div>
                         <div class="quat">
                             <div class="radio-btn">
                                 <label class="radio-label">Custom</label>
-                                <input type="radio" class="radio-input" />
+                                <input type="radio" class="radio-input" name="gender"/>
                             </div>
                         </div>
                     </div>
@@ -100,5 +106,9 @@
         </form>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+<script src="validation.js"></script>
 
 </html>
